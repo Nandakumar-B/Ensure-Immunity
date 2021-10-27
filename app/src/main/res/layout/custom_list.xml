@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:id="@+id/custom_list_pan"
+	android:padding="10dp"
+	android:background="@drawable/list_background">
+
+	<ImageView
+		android:id="@+id/pro_img"
+		android:layout_height="70dp"
+		android:layout_width="70dp"
+		android:layout_margin="5dp"
+		android:src="@drawable/ic_baby"
+		android:contentDescription="@string/image_icon" />
+
+	<RelativeLayout
+		android:layout_toEndOf="@+id/pro_img"
+		android:id="@+id/name_pan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/txt_id"
+			android:visibility="gone"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"/>
+
+		<ImageView
+			android:id="@+id/user_img"
+			android:src="@drawable/ic_person"
+			android:layout_height="25dp"
+			android:layout_width="25dp"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txt_name"
+			android:layout_toEndOf="@+id/user_img"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:letterSpacing="0.06"
+		    android:singleLine="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:fadingEdge="horizontal"
+			android:scrollHorizontally="true"
+			android:ellipsize="marquee"
+			android:textColor="#3E3CD2"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_toEndOf="@+id/pro_img"
+		android:id="@+id/date_pan"
+		android:layout_below="@+id/name_pan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/date_img"
+			android:src="@drawable/ic_calendar"
+			android:layout_height="25dp"
+			android:layout_width="25dp"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/txt_dob"
+			android:textSize="13sp"
+			android:letterSpacing="0.09"
+			android:layout_toEndOf="@+id/date_img"
+			android:textColor="#673633"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_toEndOf="@+id/pro_img"
+		android:id="@+id/phone_pan"
+		android:layout_below="@+id/date_pan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/phone_img"
+			android:src="@drawable/ic_phone"
+			android:layout_height="25dp"
+			android:layout_width="25dp"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/txt_phone"
+			android:textSize="13sp"
+			android:letterSpacing="0.09"
+			android:layout_toEndOf="@+id/phone_img"
+			android:textColor="#431411"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:padding="10dp"
+	android:id="@+id/detail_list_pan"
+	android:background="@drawable/list_background">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/detail_list_pan1">
+
+		<ImageView
+			android:id="@+id/det_vac_img"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:src="@drawable/ic_med_box"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:id="@+id/txt_det_vaccine"
+			android:layout_toEndOf="@+id/det_vac_img"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:textColor="#03074E"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/detail_list_pan1"
+		android:id="@+id/detail_list_pan2">
+
+		<ImageView
+			android:id="@+id/det_day_img"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:src="@drawable/ic_calendar"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:id="@+id/txt_det_day"
+			android:layout_toEndOf="@+id/det_day_img"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:textColor="#4241A1"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/detail_list_pan2"
+		android:id="@+id/detail_list_pan3">
+
+		<ImageView
+			android:id="@+id/det_mail_img"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:id="@+id/txt_det_mail"
+			android:layout_toEndOf="@+id/det_mail_img"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:textColor="#4241A1"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/detail_list_pan3"
+		android:id="@+id/detail_list_pan4">
+
+		<ImageView
+			android:id="@+id/det_time_img"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_margin="5dp"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:id="@+id/txt_det_time"
+			android:layout_toEndOf="@+id/det_time_img"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/card_background"
+	android:padding="10dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/alertactivityRelativeLayout1">
+
+		<ImageView
+			android:id="@+id/alert_img"
+			android:src="@drawable/ic_alert"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:id="@+id/alert_head"
+			android:layout_toEndOf="@+id/alert_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/delete"
+			android:layout_centerVertical="true"
+			android:layout_margin="10dp"
+			android:textSize="15sp"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/alertactivityRelativeLayout1"
+		android:id="@+id/alert_message"
+		android:letterSpacing="0.07"
+		android:layout_margin="10dp"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/alert_message">
+
+		<TextView
+			android:id="@+id/btn_neg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toStartOf="@+id/btn_pos"
+			android:background="?android:attr/selectableItemBackground"
+			android:text="@string/cancel"
+			android:clickable="true"
+			android:layout_margin="5dp"
+			android:padding="10dp"
+			android:focusable="true" />
+
+		<TextView
+			android:id="@+id/btn_pos"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:background="?android:attr/selectableItemBackground"
+			android:text="@string/delete"
+			android:clickable="true"
+			android:layout_margin="5dp"
+			android:padding="10dp"
+			android:focusable="true" />
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

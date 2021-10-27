@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ensure Immunity</string>
+    <string name="add_new_data">ADD NEW DATA</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_d_o_b">Enter D.O.B</string>
+    <string name="add">ADD</string>
+    <string name="users">USERS</string>
+    <string name="image_icon">Image Icon</string>
+    <string name="delete">DELETE</string>
+    <string name="cancel">cancel</string>
+    <string name="none">NONE</string>
+    <string name="ensure_nimmunity">Ensure\nImmunity</string>
+    <string name="no_matches">No matches found!</string>
+</resources>

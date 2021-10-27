@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:padding="10dp"
+	android:id="@+id/vaccine_list_pan"
+	android:background="@drawable/list_background">
+
+	<ImageView
+		android:id="@+id/vac_img"
+		android:layout_width="35dp"
+		android:layout_height="35dp"
+		android:src="@drawable/ic_med_box"
+		android:layout_margin="5dp"
+		android:contentDescription="@string/image_icon" />
+
+	<TextView
+		android:id="@+id/txt_vaccine"
+		android:layout_toEndOf="@+id/vac_img"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#000080"
+		android:textStyle="bold"/>
+
+	<ImageView
+		android:id="@+id/day_img"
+		android:layout_below="@+id/vac_img"
+		android:layout_width="35dp"
+		android:layout_height="35dp"
+		android:src="@drawable/ic_timer_on"
+		android:layout_margin="5dp"
+		android:contentDescription="@string/image_icon" />
+
+	<TextView
+		android:id="@+id/txt_period"
+		android:layout_toEndOf="@+id/day_img"
+		android:layout_below="@+id/txt_vaccine"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:layout_marginTop="15dp"
+		android:textColor="#894E38"/>
+
+</RelativeLayout>
+
